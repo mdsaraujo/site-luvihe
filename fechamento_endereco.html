@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/luvihe IMAGENS/1c2be306677c4e082d3c6e3601df9e1c.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/luvihe IMAGENS/1c2be306677c4e082d3c6e3601df9e1c.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/luvihe IMAGENS/1c2be306677c4e082d3c6e3601df9e1c.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/luvihe IMAGENS/1c2be306677c4e082d3c6e3601df9e1c.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/luvihe IMAGENS/1c2be306677c4e082d3c6e3601df9e1c.ico/favicon-16x16.png">
+    <link rel="manifest" href="/luvihe IMAGENS/1c2be306677c4e082d3c6e3601df9e1c.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/luvihe IMAGENS/1c2be306677c4e082d3c6e3601df9e1c.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Luvihe :: Finalizar pedido - Endereço</title>
+  </head>
+  <body>
+    <div class="d-flex flex-column wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bgnav border-bottom shadow-sm mb-3">
+      <div class="container">
+        <a class="navbar-brand" href="#"><strong>L u v i h e</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav  flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link active text-white active" href="/index.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/contato.html">Contato</a>
+            </li>
+          </ul>
+          <div class="align-self-dark">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/cadastro.html" class="nav-link text-white">Cadastrar</a>
+              </li>
+              <li class="nav-item">
+                <a href="/login.html" class="nav-link text-white">Entrar</a>
+              </li>
+              <li class="nav-item">
+                <span class="badge rounded-pill bg-light text-dark position-absolute ms-4 mt-0"  title="4 produto(s) no carrinho"><small>4</small></span>
+                <a href="/carrinho.html" class="nav-link text-white">
+                  <i class="bi-cart4" style= "font-size:24px; line-height:24px"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-fill">
+      <div class="container">
+        <h1>Selecione o Endereço de Entrega</h1>
+        <h3 class="mb-4">
+            Selecione o endereço de entrega e clique em <b>Continuar</b> para prosseguir para a <b>seleção da
+                forma de pagamento</b>.
+        </h3>
+        <div class="d-flex justify-content-around flex-wrap border rounded-top pt-4 px-3">
+            <div class="mb-4 mx-2 flex-even">
+                <input type="radio" class="btn-check" name="endereco" 
+                    autocomplete="off" id="end1">
+                <label class="btn btn-outline-dark p-4 h-100 w-100" for="end1">
+                    <h3>
+                        <b class="">Minha Casa</b><br>
+                        <hr>
+                        <b>Ricardo Maroquio</b><br>
+                        Rua Caminho Virtual, 101<br>
+                        Compulândia/PC<br>
+                        CEP 01.010-101
+                    </h3>
+                </label>
+            </div>
+            <div class="mb-4 mx-2 flex-even">
+                <input type="radio" class="btn-check" name="endereco" 
+                    autocomplete="off" id="end2">
+                <label class="btn btn-outline-dark p-4 h-100 w-100" for="end2">
+                    <h3>
+                        <b class="">Meu Trabalho</b><br>
+                        <hr>
+                        <b>Ricardo Maroquio</b><br>
+                        Rua Caminho Virtual, 101<br>
+                        Compulândia/PC<br>
+                        CEP 01.010-101
+                    </h3>
+                </label>
+            </div>
+            <div class="mb-4 mx-2 flex-even">
+                <input type="radio" class="btn-check" name="endereco" 
+                    autocomplete="off" id="end3">
+                <label class="btn btn-outline-dark p-4 h-100 w-100" for="end3">
+                    <h3>
+                        <b class="">Casa de Praia</b><br>
+                        <hr>
+                        <b>Ricardo Maroquio</b><br>
+                        Rua Caminho Virtual, 101<br>
+                        Compulândia/PC<br>
+                        CEP 01.010-101
+                    </h3>
+                </label>
+            </div>
+        </div>
+        <div class="text-dark border border-top-0 rounded-bottom p-4 pb-0">                    
+            <a href="/fechamento_itens.html" class="btn btn-outline-success btn-lg mb-4">
+                Voltar aos Itens
+            </a>
+            <a href="/fechamento_pagamento.html" class="btn btnsenha btn-lg ms-2 mb-4">Continuar</a>
+        </div>
+      </div>
+    </main>
+    
+      <footer class="border-top text-muted bg-light">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-12 col-md-4 text-center">
+              &copy; 2022 - luvihe Ltda ME <br>
+              Rua dom pedro II - 878 - Marilia/SP <br>
+              CNPJ 10.101.101.0001-01
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <a href="/privacidade.html" class="text-decortion-none text-dark">Politica de Privacidade</a><br>
+              <a href="/termo.html" class="text-decortion-none text-dark">Termos de uso</a><br>
+              <a href="/quemsomos.html" class="text-decortion-none text-dark">Quem somos</a><br>
+              <a href="/trocas.html" class="text-decortion-none text-dark">Trocas e devoluções</a>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <a href="/contato.html" class="text-decortion-none text-dark">Contato pelo site</a><br>
+              E-mail: <a href="mailto:não_tem@luvihe.com.br" class="text-decortion-none text-dark">não_tem@luvihe.com.br</a><br>
+              Telefone: <a href="phone: 1140028922" class="text-decortion-none text-dark">(11) 40028922</a>
+              <a href="/trocas.html" class="text-decortion-none text-dark"></a>
+            </div>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
