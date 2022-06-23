@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Transitional';
+    src: url('../fontes/Transitional521BT-BoldA.otf') format('opentype');
+    font-weight: normal;
+    font-family: 'Quicksand';
+    src: url('../fontes/Quicksand/Quicksand-VariableFont_wght.ttf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --fonte-base: 'Transitional', 'cursive';
+    --fonte-padrao: 'Quicksand';
+}
+
+body {
+    min-width: 372px;
+    /*font-family: var(--fonte-base);*/
+    font-family: var(--fonte-padrao);
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+.bgnav {
+    background: #000122;
+
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: var(--fonte-base);
+}
+
+.btnsenha {
+    background: #000122;
+    color: white;
+}
+
+.favorito {
+    color: #000122;
+}
+
+.btnfavorito {
+    background: #000122;
+    color: white;
+}
+
+.btn-outline-lixo {
+    color: #000122;
+}
+
+.btn-outline-pag {
+    color: #000122;
+    border-color: #000122;
+}
+
+.btn-outline-prod {
+    color: #000122;
+    border-color: #000122
+}
+
+.btn-outline-cancel {
+    color: #000122;
+    border-color: #000122
+}
+
+p.truncar-3l {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 469px) {
+    .mt-xs-3 {
+        margin-top: 1rem;
+    }
+}
+/*
+label:hover .text-dark {
+    transition: color 0.2s ease;
+    color: white !important;
+}
+*/
+label .text-dark {
+    transition: color 0.2s ease;
+}
+
+.btn-check:checked+.btn-outline-danger .text-dark,
+.btn-check:active+.btn-outline-danger .text-dark,
+.btn-check:hover+.btn-outline-danger .text-dark {
+    transition: color 0.2s ease;
+    color: white !important;
+}
+
+.flex-even {
+    flex: 1;
+    min-width: 300px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #000122;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");    
+}
+
+fieldset.row .form-floating>label {
+    margin-left: calc(var(--bs-gutter-x) * 0.5);
+}
